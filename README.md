@@ -2,12 +2,12 @@
 
 The pipeline for processing documents and detecting topics
 
-## Requisites
+## Prerequisites
 
 Python3, pip.
 You might need to install some python dependencies from pip. Any part of the pipeline is runnable as python3 script, assuming you have data in appropriate folders and files.
 
-## Programs
+## Pipeline scripts
 
 ```bash
 html_parser.py # parses html documents to plain text
