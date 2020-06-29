@@ -7,6 +7,10 @@ The pipeline for processing documents and detecting topics
 Python3, pip.
 You might need to install some python dependencies from pip. Any part of the pipeline is runnable as python3 script, assuming you have data in appropriate folders and files.
 
+## Dataset
+
+The risk sections for the project are added in risk_section directory, they are extracted from the provided full dataset of 10K filings, parsed html and extracted risk sections.
+
 ## Pipeline scripts
 
 ```bash
