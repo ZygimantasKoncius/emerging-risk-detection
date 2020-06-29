@@ -4,8 +4,9 @@ The pipeline for processing documents and detecting topics
 
 ## Prerequisites
 
-Python3, pip.
-You might need to install some python dependencies from pip. Any part of the pipeline is runnable as python3 script, assuming you have data in appropriate folders and files.
+Python3, pip, pandas, pyTorch, numpy...
+
+All parts of the pipeline are runnable as python3 script, assuming you have data in appropriate folders and files. The scripts are not parameterised and parameters will need to be changed from inside of the script.
 
 ## Dataset
 
@@ -22,6 +23,6 @@ term_frequency_counter.py # tf counting for side exploration
 idf-words.py # idf for words
 tfid_dataframe_joiner.py # making tfidf dataframe from tf and idf outputs
 tfidf-classifier.py # classify sentences using tf-idf into existing topics from topics_with_frequency.txt
-sentence-clustering.py # various clustering approaches using word embeddings
+sentence-clustering.py # various clustering approaches using word embeddings (uses 10k-word-embeddings as dependency)
 topic_modelling.py # LDA topic modelling from various data clusterings
 ```
