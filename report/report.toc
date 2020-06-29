@@ -1,0 +1,50 @@
+\contentsline {chapter}{\numberline {1}Context}{7}% 
+\contentsline {section}{\numberline {1.1}Motivation}{7}% 
+\contentsline {section}{\numberline {1.2}Aim}{8}% 
+\contentsline {section}{\numberline {1.3}Objectives}{8}% 
+\contentsline {section}{\numberline {1.4}Outcomes}{8}% 
+\contentsline {section}{\numberline {1.5}Impact of COVID-19}{8}% 
+\contentsline {chapter}{\numberline {2}Background}{9}% 
+\contentsline {section}{\numberline {2.1}Natural Language Processing}{9}% 
+\contentsline {subsection}{\numberline {2.1.1}NLP Pipeline}{9}% 
+\contentsline {subsubsection}{Stopword Removal}{10}% 
+\contentsline {subsection}{\numberline {2.1.2}Information Retrieval}{10}% 
+\contentsline {subsubsection}{N-grams}{10}% 
+\contentsline {subsubsection}{Term Frequency (TF)}{11}% 
+\contentsline {subsubsection}{Inverse Document Frequency (IDF)}{11}% 
+\contentsline {subsubsection}{Term Frequency - Inverse Document Frequency (TF-IDF)}{11}% 
+\contentsline {subsubsection}{Cosine Similarity}{11}% 
+\contentsline {subsection}{\numberline {2.1.3}Word Embeddings}{12}% 
+\contentsline {subsection}{\numberline {2.1.4}Topic Modelling Using LDA}{12}% 
+\contentsline {section}{\numberline {2.2}Clustering}{13}% 
+\contentsline {subsection}{\numberline {2.2.1}K-means clustering}{14}% 
+\contentsline {subsection}{\numberline {2.2.2}Density-based spatial clustering of applications with noise (DBSCAN)}{14}% 
+\contentsline {section}{\numberline {2.3}SEC 10-K Form}{14}% 
+\contentsline {section}{\numberline {2.4}Related Research}{17}% 
+\contentsline {section}{\numberline {2.5}Constant Risks}{18}% 
+\contentsline {chapter}{\numberline {3}System Development}{21}% 
+\contentsline {section}{\numberline {3.1}Requirements}{21}% 
+\contentsline {section}{\numberline {3.2}System Architecture}{22}% 
+\contentsline {section}{\numberline {3.3}Data Preprocessing}{23}% 
+\contentsline {subsection}{\numberline {3.3.1}Document Parsing}{23}% 
+\contentsline {subsection}{\numberline {3.3.2}Risk Section Extraction}{23}% 
+\contentsline {subsection}{\numberline {3.3.3}Normalisation}{24}% 
+\contentsline {section}{\numberline {3.4}Dataset Profiling}{24}% 
+\contentsline {subsection}{\numberline {3.4.1}TF}{25}% 
+\contentsline {subsection}{\numberline {3.4.2}TF-IDF}{26}% 
+\contentsline {section}{\numberline {3.5}Classification of Sentences Into Constant and Emerging Risks}{27}% 
+\contentsline {subsection}{\numberline {3.5.1}TF-IDF Based Classification Algorithm}{27}% 
+\contentsline {subsection}{\numberline {3.5.2}Evaluation of Classification}{28}% 
+\contentsline {section}{\numberline {3.6}Clustering Emerging Risk Sentences}{30}% 
+\contentsline {subsection}{\numberline {3.6.1}Word Embedding Representation}{30}% 
+\contentsline {subsection}{\numberline {3.6.2}K-Means Clustering}{30}% 
+\contentsline {subsection}{\numberline {3.6.3}Density-Based Spatial Clustering of Applications with Noise (DBSCAN)}{31}% 
+\contentsline {section}{\numberline {3.7}Topic Modelling Using LDA}{32}% 
+\contentsline {chapter}{\numberline {4}Results and Evaluation}{34}% 
+\contentsline {section}{\numberline {4.1}Experiment 1: Full}{34}% 
+\contentsline {section}{\numberline {4.2}Experiment 2: First Mentions}{35}% 
+\contentsline {section}{\numberline {4.3}Experiment 3: Yearly}{35}% 
+\contentsline {chapter}{\numberline {5}Conclusion}{37}% 
+\contentsline {section}{\numberline {5.1}Results}{37}% 
+\contentsline {section}{\numberline {5.2}Reflection}{37}% 
+\contentsline {section}{\numberline {5.3}Future Improvements and Research}{38}% 

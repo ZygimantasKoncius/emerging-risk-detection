@@ -1,0 +1,90 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {images/} }
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+\renewcommand{\bibname}{References}
+\usepackage{array}
+\usepackage{varwidth}
+
+\begin{document}
+\newcolumntype{M}{>{\begin{varwidth}{10cm}}l<{\end{varwidth}}}
+\newcolumntype{S}{>{\begin{varwidth}{8cm}}l<{\end{varwidth}}}
+
+
+\title{
+{Topic Modelling for Emerging Risk Identification from Company Annual Financial Reports}\\
+{\large University Of Manchester}\\
+{\large Department Of Computer Science}\\}
+\author{By Zygimantas Koncius\\Supervised By Goran Nenadic}
+\date{April 2020}
+\maketitle
+
+\chapter*{Abstract}
+Company annual financial reports are a very useful source of information about company's performance, opportunities and risks in the industries. Considering the amount of data contained in every report and amount of reports from different companies available, there is a strong motivation to automate processing of this information, this way gaining more insights into the current state of industries.
+\\\\
+The project described in this report is aimed to create a method that is able to automatically identify emerging risks faced by multiple businesses and the trends of those risks. The research focuses on first story detection, classification and topic modelling in annual financial reports. The features used for these approaches were based on a sentence level granularity. In the final design of the method, one of the core components was classifying each of the sentences into 1 of 30 known constant risks or keeping it unclassified. After classification, the topics were generated from the unclassified sentences using Latent Dirichlet Allocation (LDA). This method has been tested on a dataset containing 53,093 SEC 10-K filings. The outcome of it was between 30 and 50 topics for the whole dataset and 10 topics for every year in the dataset.
+\\\\
+Extracting the most useful information from the textual financial report data and correctly interpreting it is an ongoing challenge and hopefully methods used in this project will prove to be useful in future research.
+
+\chapter*{Acknowledgements}
+I would like to express my gratitude to my supervisor, Dr Goran Nenadic for
+his guidance, support and suggestions throughout the whole project.\\\\
+I would also like to thank Dr Stefan Petry from Alliance Manchester Business
+School for sharing materials relevant to the project as well as passing some of his knowledge in the field of business and helping throughout the course of the project.
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+\include{chapters/chapter5}
+
+\medskip
+
+\begin{thebibliography}{9}
+\label{References}
+\bibitem{nlpdefinition}
+en.wikipedia.org. (2020). Natural Language Processing. [online] Available at: https://en.wikipedia.org/wiki/Natural\_language\_processing [Accessed 25 Apr. 2020].
+\bibitem{nlppipeline}
+Slideshare. (2016) Natural Language Processing (NLP). [online] Available at: https://www.slideshare.net/YuriyGuts/natural-language-processing-nlp/38 [Accessed 25 Apr. 2020]
+\bibitem{ngramwiki}
+en.wikipedia.org. (2020). n-gram. [online] Available at: https://en.wikipedia.org/wiki/N-gram [Accessed 25 Apr. 2020].
+\bibitem{wordembeddingwiki}
+en.wikipedia.org. (2020). Word Embedding. [online] Available at: https://en.wikipedia.org/wiki/Word\_embedding [Accessed 25 Apr. 2020].
+\bibitem{languagemodels}
+Towards Data Science. (2019). FROM Pre-trained Word Embeddings TO Pre-trained Language Models — Focus on BERT. [online] Available at: https://towardsdatascience.com/from-pre-trained-word-embeddings-to-pre-trained-language-models-focus-on-bert-343815627598 [Accessed 25 Apr. 2020].
+\bibitem{ldawiki}
+en.wikipedia.org. (2020). Latent Dirichlet allocation. [online] Available at: https://en.wikipedia.org/wiki/Latent\_Dirichlet\_allocation [Accessed 25 Apr. 2020].
+\bibitem{ldaexplanation}
+Towards Data Science. (2018). LDA Topic Modeling: An Explanation. [online] Available at: https://towardsdatascience.com/lda-topic-modeling-an-explanation-e184c90aadcd [Accessed 25 Apr. 2020].
+\bibitem{clusteringWiki}
+en.wikipedia.org. (2020). Cluster Analysis. [online] Available at: https://en.wikipedia.org/wiki/Cluster\_analysis [Accessed 25 Apr. 2020].
+\bibitem{kmeansexplanation}
+Towards Data Science. (2018). K-means Clustering: Algorithm, Applications, Evaluation Methods, and Drawbacks. [online] Available at: https://towardsdatascience.com/k-means-clustering-algorithm-applications-evaluation-methods-and-drawbacks-aa03e644b48a [Accessed 25 Apr. 2020].
+\bibitem{dbscanwiki}
+en.wikipedia.org. (2020). DBSCAN. [online] Available at: https://en.wikipedia.org/wiki/DBSCAN [Accessed 25 Apr. 2020].
+\bibitem{riskpaper1} 
+Bao, Y. \& Datta, A.. (2012). Summarization of corporate risk factor disclosure through topic modeling. International Conference on Information Systems, ICIS 2012. 1. 701-719.
+\bibitem{10kwordembeddings}
+Sehrawat, Saurabh, Learning Word Embeddings from 10-K Filings Using PyTorch (September 5, 2019). Available at SSRN: https://ssrn.com/abstract=3480902 or http://dx.doi.org/10.2139/ssrn.3480902
+\bibitem{lxmlhtml}
+LXML. (2020). Parsing XML and HTML with lxml. [online] Available at: https://lxml.de/parsing.html [Accessed 25 Apr. 2020].
+\bibitem{nltkhome}
+NLTK. (2020). Natural Language Toolkit. [online] Availabled at: https://www.nltk.org/ [Accessed 25 Apr. 2020]
+\bibitem{sklearnhome}
+Scikit-learn. (2020). Machine learning in Python. [online] Availabled at: https://scikit-learn.org/stable/ [Accessed 25 Apr. 2020]
+\bibitem{tfidfclassificationresearch}
+KE - WEI HUANG AND ZHUOLUN LI 2011. A Multi-Label Text Classification Algorithm for Labeling Risk Factors in SEC Form 10-K. ACM Trans. On Management Information Systems. Process., 6, 3, Article 9 (November 2011), 19 pages. DOI = 10.1145/1290002.1290003 http://doi.acm.org10.1145/1290002.1290003
+\bibitem{pytorchhome}
+PyTorch. (2020). PyTorch. [online] Availabled at: https://pytorch.org/ [Accessed 25 Apr. 2020]
+\bibitem{seedDFCpaper}
+Chenliang Li, Shiqian Chen, Jian Xing, Aixin Sun, and Zongyang Ma. 2018. Seed-Guided Topic Model for Document Filtering and Classification. ACM Trans. Inf. Syst. 37, 1, Article 9 (December 2018), 37 pages. DOI:https://doi.org/10.1145/3238250
+\end{thebibliography}
+
+\end{document}

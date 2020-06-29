@@ -1,0 +1,108 @@
+\chapter{Results and Evaluation}
+The end result of this project were risk topics generated from the potential emerging risk sentences, organized in different ways, this way providing a variety of results for evaluation.
+
+\section{Experiment 1: Full}
+The LDA was ran on the dataset consisted of documents with remaining emerging risk sentences, identified as such by the classification part (Section \ref{sec:classification}). The LDA was run with topic parameter set to 30 and 50.
+
+{\renewcommand{\arraystretch}{1}%
+\begin{table}[H]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|l|}
+\hline
+Topic number & Topic keywords \\\hline
+0 & products tests test testing research cancer diagnostic clinical patents cell \\\hline
+1 & products patents agreements research parties technologies rights development addition terms \\\hline
+2 & solar cms hospitals tissue brazilian products states services facilities regulations \\\hline
+3 & products memory storage semiconductor customers flash sales based test design \\\hline
+4 & vessels vessel charter rates fleet charters shipping time addition market \\\hline
+5 & products customers sales services systems solutions competitors technologies business addition \\\hline
+6 & advertising 000 company media square 2007 2006 2008 100 31 \\\hline
+7 & services internet online advertising search users websites business customers content \\\hline
+8 & entergy louisiana utility states transmission costs gulf ferc energy electric \\\hline
+9 & statements forward looking securities directors broker company 000 stock business \\\hline
+10 & water costs project operations exploration risks projects permits assurance development\\
+\hline
+\end{tabular}
+}
+\caption{Unlabelled topic extract from unclassified sentences (50 Topic Run)}
+\label{table:allsetldatopics}
+\end{table}
+
+Table \ref{table:allsetldatopics} illustrates the variety of topics retrieved from generating 50 topics using LDA on the filtered dataset. A lot of these topics are fairly specific and are suitable for labeling. For example, topic 3 is clearly speaking about flash memory storage, while topic 6 is related to emerging risks in media and advertising. However, some topics might be too specific, such as topic 8 which names specific states and companies ("Entergy"). Some other topics may be fairly generic and clash with existing constant topics (e.g. volatile stock price and topic 9).
+
+\section{Experiment 2: First Mentions}
+The LDA was run on the first occurences of similar sentences, in hopes of getting more diverse emerging risk topics. The attempt to generate 50 topics proved to be more informative.
+
+\begin{table}[H]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|l|}
+\hline
+Topic number & Topic keywords \\\hline
+0 & 2009 2008 2011 2010 2012 30 december 2006 2007 2013 \\\hline
+1 & subsidiaries owned company joint operations ventures china companies canada holding \\\hline
+2 & treatment patients approved drugs products cancer disease therapy use including \\\hline
+3 & businesses acquisitions acquire opportunities transactions business israel expand hospitals companies \\\hline
+4 & services customers rates reduce lower prices costs increases higher products \\\hline
+5 & products sales sell distributors customers brand manufacturers sold competitors selling \\\hline
+6 & properties emissions rule epa department final title review permit air \\\hline
+7 & advertising media television digital programming cable video entertainment content internet \\\hline
+8 & prc tax entities safe offshore enterprises transfer circular resident companies \\\hline
+9 & transmission generation power plants facilities utility plant operate operating electricity \\\hline
+\end{tabular}
+}
+\caption{Unlabelled LDA topic extract from first sentence occurencies (50 topic run)}
+\label{table:firstoccurencetopics}
+\end{table}
+
+Table \ref{table:firstoccurencetopics} gives an overview of the generated topics. Most of the topics are informative and could be labeled, but not all (Topic 0). Furthermore the topics include a lot of industry specific words, therefore possibly achieving the goal of specificity. Topics reagading media (Topic 7), offshore tax (Topic 8) and others can be idenfied.
+
+\section{Experiment 3: Yearly}
+Running LDA on every year reports was different from the other scenarios. It provided 10 topics for every year.
+ 
+\begin{table}[H]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|l|}
+\hline
+Topic number & Topic keywords \\\hline
+0 & statements looking forward words card company date cards risks expressions \\\hline
+1 & services business costs operations addition contracts claims customers new sales \\\hline
+2 & services internet customers companies online wireless advertising fcc addition china \\\hline
+3 & products company vessels treatment 2006 vessel food patients market sales \\\hline
+4 & products patents clinical trials development patients research treatment companies addition \\\hline
+5 & products steel sales customers segment 000 materials company used production \\\hline
+6 & aircraft loans banks services operations banking financial business new president \\\hline
+7 & partner general interests directors assets partnership units loans affiliates investments \\\hline
+8 & products customers sales systems technologies components competitors market addition suppliers \\\hline
+9 & properties 2006 operations shares 000 company gaming business costs 2005 \\\hline
+\end{tabular}
+}
+\caption{Unlabelled LDA Topics 2006}
+\label{table:yearlylda2006}
+\end{table}
+
+\begin{table}[H]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|c|c|}
+\hline
+Topic number & Topic keywords \\\hline
+0 & products patents sales patients agreements treatment clinical use addition product \\\hline
+1 & risks services securities business losses operations shares claims addition companies \\\hline
+2 & treatment patients clinical trials phase development drugs products approved fda \\\hline
+3 & products customers sales systems technologies competitors addition market suppliers components \\\hline
+4 & partner general business units stockholders partnership operations interests combination directors \\\hline
+5 & products statements looking contracts forward costs customers services operations equipment \\\hline
+6 & properties operations gaming construction costs water facilities land 2007 ethanol \\\hline
+7 & services internet china online prc customers business regulations companies content \\\hline
+8 & 2007 000 2006 shares mr president 2008 2005 group vice \\\hline
+9 & stores aircraft vessels television vessel addition costs retail operations programming \\\hline
+\end{tabular}
+}
+\caption{Unlabelled LDA Topics 2007}
+\label{table:yearlylda2007}
+\end{table}
+
+As it can be seen from the examples of the results a lot of topics are difficult to label (e.g. Topic 0 in 2006 and Topic 6 in 2007), because they seem to be a mix of very different topics or the keywords might refer to very broad terms. It can also be noticed that some of the topics repeat throughout the years, just at different positions (e.g. clinical trials), which might indicate the change in importance of the topic or that they are no longer emerging. In general, the results from this LDA application method seem to be really difficult to interpret and make sense of. Therefore, this experiment does seem a little bit inefficient and not yielding satisfactory results.

@@ -1,0 +1,16 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1}{\ignorespaces Dataset Distribution}}{15}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2}{\ignorespaces Random Stemmed Word Term Frequency Extract}}{25}% 
+\contentsline {table}{\numberline {3}{\ignorespaces Random (2,3)-gram Term Frequency Extract}}{25}% 
+\contentsline {table}{\numberline {4}{\ignorespaces Random (1,2,3)-gram TF-IDF Extract}}{27}% 
+\contentsline {table}{\numberline {5}{\ignorespaces Constant risk sentence examples and their similarity score to the most similar constant risk topic}}{29}% 
+\contentsline {table}{\numberline {6}{\ignorespaces Uncategorized, potential risk sentences}}{29}% 
+\contentsline {table}{\numberline {7}{\ignorespaces Single DBSCAN Cluster Example}}{31}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {8}{\ignorespaces Unlabelled topic extract from unclassified sentences (50 Topic Run)}}{34}% 
+\contentsline {table}{\numberline {9}{\ignorespaces Unlabelled LDA topic extract from first sentence occurencies (50 topic run)}}{35}% 
+\contentsline {table}{\numberline {10}{\ignorespaces Unlabelled LDA Topics 2006}}{36}% 
+\contentsline {table}{\numberline {11}{\ignorespaces Unlabelled LDA Topics 2007}}{36}% 
+\addvspace {10\p@ }

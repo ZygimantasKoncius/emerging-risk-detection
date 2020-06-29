@@ -1,0 +1,34 @@
+\chapter{Context}
+
+\section{Motivation}
+This project focuses on U.S. company annual report 10-K forms required by U.S. Securities and Exchange Commission (SEC). These forms are lengthy ($\sim$100 pages long) documents, that have to comply with SEC requirements. These forms are an important source of information for company's stakeholders, about the business' business performance, future plans as well as risks that company has to face.
+
+The main focus of the project are the emergence of the risks. Which are conveniently represented by a separate section in 10-K forms. Risks play an  important role in predicting the future of the businesses or even the whole industries. The risks can be categorized into known, constant risks - the risks that are reoccuring every year, such as \textit{catastrophes, financial liability and financing uncertainty} - and emerging risks - the risks that are novel and possibly unseen before, such as \textit{cybersecurity or COVID-19}. The main focus of this project is on the detection of the latter.
+
+Due to the number of companies and reports (between 3000 and 5000 of $\sim$100 page long reports every year) it is impossible for any person to analyze all of them. Therefore, an automatic risk emergence detection could offer unprecedented insights into the industries as a whole, as it would be possible to proccess much more documents than any human could ever read.
+
+Furthermore, identifying risk trends early could provide a significant competitive advantage to the investors, who could make insightful, data-backed investment decisions, before others, providing them with the capability to make better investments.
+
+\section{Aim}
+The aim of this project is creating a system which - given the set of financial reports - is capable of automatically identifying emerging, before unseen risks.
+
+\section{Objectives}
+In order to achieve the aim of the project, the following objectives have been set:
+\begin{itemize}
+\item Analyse the dataset, document structure and preprocess the data
+\item Extract the risk sections
+\item Develop a method to identify known type of risks
+\item Identify emerging risks, potentially by using topic modelling
+\item Analyse and evaluate the results
+\end{itemize}
+
+\section{Outcomes}
+The project resulted in following outcomes:
+\begin{itemize}
+\item A method to parse the annual financial reports and extract risk sections from them
+\item A method to filter out known, constant risks from the dataset
+\item A method to identify potential emerging risks
+\end{itemize}
+
+\section{Impact of COVID-19}
+As this project is purely software-based and all of the required computational resources were not disrupted and accessible at all times, there was no direct impact to the system creation. However, due to the disruptions of communication, planning and cooperation, caused by COVID-19, the evaluation part was difficult to carry out and lacks end user feedback.
